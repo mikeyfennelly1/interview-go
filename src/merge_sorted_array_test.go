@@ -37,7 +37,7 @@ func TestMerge(t *testing.T) {
 	}
 
 	for _, c := range cases {
-		Merge(&c.nums1, &c.m, &c.nums2, &c.n)
+		Merge(c.nums1, c.m, c.nums2, c.n)
 		require.Equal(t, c.expected, c.nums1)
 	}
 }

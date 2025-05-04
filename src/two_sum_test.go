@@ -25,10 +25,15 @@ func TestTwoSum(t *testing.T) {
 			Target:   6,
 			Expected: []int{1, 2},
 		},
+		{
+			Input:    []int{3, 3},
+			Target:   6,
+			Expected: []int{0, 1},
+		},
 	}
 
 	for _, c := range cases {
-		result := TwoSum(c.Input, c.Target)
+		result := TwoSum2(c.Input, c.Target)
 		require.Equal(t, c.Expected, result)
 		if reflect.DeepEqual(c.Expected, result) {
 			logrus.Infof("%v == %v", c.Expected, result)

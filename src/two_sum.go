@@ -8,19 +8,17 @@ package src
  */
 
 func TwoSum(nums []int, target int) []int {
-	for index1, num1 := range nums {
-		compliment := target - num1
+	ht := make(map[int]int)
 
-		for i := 0; i < len(nums); i++ {
-			if i == index1 {
-				continue
-			}
-
-			if nums[i] == compliment {
-				return []int{index1, i}
-			}
+	for i, num := range nums {
+		// if the compliment for num (target-num) exists in the hash table...
+		if j, exists := ht[target-num]; exists {
+			// ... return the index of the compliment and num
+			return []int{j, i}
 		}
+		// create an entry in the hashtable for num and its index
+		ht[num] = i
 	}
 
-	return nil
+	return []int{}
 }
