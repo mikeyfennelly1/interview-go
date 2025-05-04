@@ -1,13 +1,24 @@
-Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+= interview-go
+:toc:
 
-You may assume that each input would have exactly one solution, and you may not use the same element twice.
+Technical interview questions in the Go programming language.
 
-You can return the answer in any order.
+== Overview
 
+This repo can be used to document and step-through DSA interview question solutions.
 
+You can look in the `/src` directory for the code for these questions.
 
-*Example 1:*
+== Questions
+=== Maximum Subarray
+==== Question
+==== Solution
 
-Input: nums = [2,7,11,15], target = 9
-Output: [0,1]
-Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
+=== Merge Sorted Array
+==== Question
+
+==== Solution
+
+=== Two Sum
+==== Question
+==== Solution
